@@ -34,3 +34,105 @@ fieldset{
     borde, tipo y color pero puede ser en cualquier orden */
     border: 2px dashed #ddd;
 }
+legend{
+    font-size: 16px;
+    font-weight: 900;
+}
+/* Encuentra todos los fieldset del documento, el > representa elementos hijos inmediatos y los demas que sean divs.
+   Si quiero que encuentre todos los filedset y luego todos los elementos hiijos y los hijos de ellos solamente se 
+   agrega un espacio.  */
+   
+fieldset > span{
+    color: #6278B0;
+    padding: 20px 40px;
+    /*se puede cambiar a in line, in-line-block, none*/
+    display: block;
+    /* propiedades del background, background-range, background-repeat, background position, background-color*/
+    background: url(./chikfila.jpg)no-repeat center center #CCE4F8;
+    background-size: 200px 50px;
+    border: 1px solid #6278B0;
+    margin-bottom: 10px;     
+}
+/*Para formar una clase para los input*/
+.formElement{
+    padding: 5px 10px;
+    width: 300px;
+
+}
+/* para que sea mas especifica*/
+select[name=rate]{
+    font-size: 14px;
+    width: 250px;
+}
+#submitButton,#resetButton{
+    padding: 10px 20px;
+    font-size: 16px;
+    border 0;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+#submitButton{
+    background-color: #56E56F;
+}
+
+#resetButton{
+    background-color: #D9534F;
+}
+.clickable:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+#submitButton:hover{
+    background-color: black;
+}
+/*NOTA: prioridad de #id luego .class y al final elemento*/
+/*Si se tienen muchos divs, con una clase que la tienen otros elementos que no son div se utiliza div.class
+se puede tener varias clases ejemplo: div.class1.class2  */
+
+table{
+    border: 1px solid #EEE;
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+td{
+    color: #999;
+}
+tr{
+    background-color: #F4F4F4;
+}
+th,td{
+    color: #999;
+    border: 1px solid #EEE;
+    padding: 15px 25px;
+}
+th{
+    color: white;
+    background-color: #55B3C5;
+    text-transform: uppercase;
+}
+td:hover{
+    color: #555;
+}
+/*Float, nos ayuda a alienar elementos lado con lado pero pudiera 
+ocurrir que los elementos quieran ocupar el mismo espacio y por eso hay otra propiedad.
+*/
+/*Ejemplo*/
+ul{
+    background-color: #CCC;
+    list-style: none;
+    overflow: hidden;
+}
+li{
+    float: left;
+    padding: 20px;
+}
+li > a {
+    text-decoration: none; 
+    color: #4F545F;
+}
+li:hover, li>a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #999;
+}
