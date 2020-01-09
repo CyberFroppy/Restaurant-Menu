@@ -1,1 +1,36 @@
-"hola mundo!"
+body{
+    /*Sans serif sirve para quitar las decoraciones*/
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    color: #4F545F;
+    margin: 0px;    /*se puede omitir px solamente en el 0 y funciona*/
+    padding: 10px;   
+}
+/*Modelo de caja, tiene 3 propiedades.
+padding, espacio entre el contorno del elemento.
+margin, espacio que separa un elemento de otro
+border,
+
+-Todos tienen estas propiedades.
+
+**padding/margin**
+padding: 20px;                  20 en general
+padding: 20px 10px;             20 hacia arriba y abajo y 10 a los lados
+padding: 10px 20px 5px 15px;    Arriba, derecha, abajo, izquierda.
+padding-right: 15px;            directamente
+*/
+
+h1{
+    background-color: #55B3C5;
+    margin: 0px;
+    padding: 20px;
+    color: white;
+}
+
+fieldset{
+    margin: 20px;
+    padding: 20px;
+    /*si es el mismo color, se puede usar solo 3 letras
+    borde, tipo y color pero puede ser en cualquier orden */
+    border: 2px dashed #ddd;
+}
