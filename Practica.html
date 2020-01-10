@@ -8,9 +8,11 @@
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <li><a href="/">Home</a></li>
-    <li><a href="/">About</a></li>
-    <Li><a href="/">Reviews</a></Li>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <Li><a href="/">Reviews</a></Li>
+    </ul>
     <section>
         This is a side bar
     </section>
@@ -58,20 +60,24 @@
     </table>
     <form action="Comment">
         <fieldset>
+            <legend>
+                This is where any content in the form
+            </legend>
+            <span>We would not share any of this information</span>
             <label>
-                First Name: <input type="text">
+                First Name: <input type="text"class= "formElement">
             </label>
             <p></p>
             <label>
-                Last Name: <input type="text">
+                Last Name: <input type="text"class= "formElement">
             </label>
             <p></p>
             <label>
-                Email: <input type="mail">
+                Email: <input type="mail"class= "formElement">
             </label>
             <p></p>
             <label>
-                Phone Number: <input type="tel">
+                Phone Number: <input type="tel"class= "formElement">
             </label>
             <p></p>
             <div>Rate Us!</div>
@@ -88,18 +94,17 @@
             <p></p>
             <div>Would you like to visit us again?</div>
             <label>
-                Yes:<input type="radio">
+                Yes:<input type="radio" class= "formElement">
             </label>
             <p></p>
             <label>
-                No: <input type="radio">
+                No: <input type="radio"class="formElement">
             </label>
             <p></p>
-            <input type="submit" value="Guardar">
-        </fieldset>
-        <legend>
-            This is where any content in the form
-        </legend>
+            <input type="submit" value="Guardar"class="clickable" id="submitButton">
+            <input type="reset" value="Reset"class="clickable"id="resetButton"/>
+        </fieldset> 
+        
     </form>
 </body>
 </html>
