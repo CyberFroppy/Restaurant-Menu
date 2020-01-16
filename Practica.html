@@ -8,7 +8,7 @@
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <ul>
+    <ul id="nav">
         <li><a href="/">Home</a></li>
         <li><a href="/">About</a></li>
         <Li><a href="/">Reviews</a></Li>
@@ -58,14 +58,14 @@
             </tr>
         </tbody>
     </table>
-    <form action="Comment">
+    <form id="commentForm">
         <fieldset>
             <legend>
                 This is where any content in the form
             </legend>
             <span>We would not share any of this information</span>
             <label>
-                First Name: <input type="text"class= "formElement">
+                First Name: <input type="text"class= "formElement" id = "firstname">
             </label>
             <p></p>
             <label>
@@ -82,6 +82,7 @@
             <p></p>
             <div>Rate Us!</div>
             <select name="rate">
+                <option value="-1">Please Select an Option</option>
                 <option value="5">Very Good</option>
                 <option value="4">Good</option>
                 <option value="3">Neutral</option>
@@ -104,7 +105,7 @@
             <input type="submit" value="Guardar"class="clickable" id="submitButton">
             <input type="reset" value="Reset"class="clickable"id="resetButton"/>
         </fieldset> 
-        
     </form>
+    <script src = "./js/index.js" type="text/javascript"></script>
 </body>
 </html>
